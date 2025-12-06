@@ -12,7 +12,7 @@ Now we only have to think about on which row to position each queen so that no t
      -  Else (meaning that all squares on column M are being attacked by at least one queen), we've made a mistake on one of the previous steps. We go back to queen M-1 and try to find the next available square for it.
   3. If we've found an availble square for queen 8, then there are no conflicts on the board and the problem is solved.
 
-This solution, while intuitive is very slow - worst case we have to check 8 positions for each queen that means that the above steps have to be repeated 8^8 = 16 777 216 times. 
+This solution, while intuitive is very slow - worst case we have to check 8 positions for each queen that means that the above steps have to be repeated 8<sup>8</sup> = 16 777 216 times. 
 Most systems will still be able to solve the problem using the recursive algorithm in a relatively short time. However for very large N, say in the tens of thousands, it is simply unfeasible to use the recursive algorithm.
 
 ## Min-conflicts
